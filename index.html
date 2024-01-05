@@ -2,26 +2,68 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+  <title>EscrowPayAfrica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
     <section class="hero">
       <!-- start navigation -->
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Buying</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Signup</a></li>
-        </ul>
-      </nav>
+      <div class="top-nav">
+        <img src="images/Group 57.svg" alt="" >
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Buying</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Signup</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <!-- end navigation -->
       <div class="hero-left">
-        <p>Experience <a style="color:">tranquility</a></p>
+        <p>Experience <a style="color:#77AF2E;">tranquility</a> While making online purchases or sales.</p>
+        <div class="input-form">
+
+          <form id="form1" action="" method="">
+            <div>
+
+              <select id="activity" name="activity">
+                <option value="buying">I'm buying</option>
+
+                <!-- <option value="brokering">I'm brokering</option> -->
+              </select>
+              <select name="category" placeholder="choose here">
+                <option value="general-goods">General Goods</option>
+                <option value="motor-vehicles">Motor Vehicles</option>
+                <option value="general-service">General Service</option>
+                <option value="electronics">Electronics</option>
+                <option value="freelancing-accounts">Freelancing Accounts</option>
+              </select>
+            </div>
+            <br>
+            <div>
+              <input type="text" name="item" placeholder="item e.g Mazda" required>
+              <select name="price">
+                <option value="ksh">KSH</option>
+              </select>
+              <input type="text" name="amount" placeholder="Amount" required oninput="this.value = this.value.replace(/[^0-9,]/g, '').replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ',');">
+            </div>
+            <br>
+            <div>
+              <input type="submit" class="btn-get-started" value="Get Started Now">
+            </div>
+          </form>
+
+        </div>
+
       </div>
       <div class="hero-right">
 
