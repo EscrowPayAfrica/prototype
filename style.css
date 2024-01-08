@@ -1,15 +1,19 @@
 body{
   width: 100%;
 }
+*{
+
+}
 .hero{
   background-color: #01426A;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 
 }
 .top-nav{
   display: flex;
   justify-content: space-around;
+
 }
 nav ul{
   display: flex;
@@ -17,17 +21,92 @@ nav ul{
 }
 nav ul li{
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   text-decoration: none;
   list-style-type: none;
+
 
 }
 nav ul li a{
   color:white;
   text-decoration: none;
+  font-size: 20px;
+}
+.first-note{
+  color:white;
+
+    font: normal normal 800 70px/90px Montserrat;
+}
+.top-nav img{
+  width: 150px;
+  height: auto;
+
+}
+.hero-split{
+  display: flex;
+
+}
+.hero-left{
+flex: 1;
 }
 
-.top-nav img{
-  width: 100px;
-  height: auto;
+.hero-right{
+background-image: url('images/Path 51.svg');
+background-size: 100%;
+flex: 1;
+display: flex;
+justify-content: flex-end; /* Align content to the end (furthest right) */
+align-items: center; /* Center vertically within the container */
+
+}
+
+.hero-right img{
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    height: 70%; /* Maintain the aspect ratio */
+
+}
+
+/* about-us */
+.about-us {
+  display: flex;
+  justify-content: space-around;
+  color: #00365D;
+}
+.about-us div{
+  padding: 40px;
+}
+
+/* services */
+.card-container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.card-container a {
+  display: block;
+}
+
+.icon {
+  display: inline-block;
+  width: 50px; /* Adjust the size of the icon as needed */
+  height: 50px;
+  color:#13415B;
+  background-color: #77AF2E; /* Change the background color of the icon */
+  border-radius: 50%;
+  line-height: 50px; /* Center the content vertically within the circle */
+  color: #fff; /* Change the color of the icon */
+  font-size: 24px; /* Adjust the font size of the icon */
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
 }
